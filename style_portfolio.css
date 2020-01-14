@@ -1,0 +1,83 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+  
+.navbar {
+    display: flex;
+    background-color: #333;
+}
+
+.navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    transition: 0.5s ease;
+}
+  
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.row {  
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+.sideview {
+    flex: 30%;
+    background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+    padding: 20px;
+}
+
+.sideview h1{
+    font-family: Bitter, serif;
+    color: black;
+}
+.main {
+    flex: 70%;
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    padding: 20px;
+}  
+
+.main h1{
+    font-family: Livvic , sans-serif;
+}
+p , li{
+    font-family: PT Sans, sans-serif;
+    font-size: 1.4em;
+}
+
+.image-about{
+    background-image: url(./images/laptop3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.image-me {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+  }
+  
+.image-skills{
+    background-image: url(./images/work.jpg);
+    background-position: center;
+    background-size: cover;
+}  
+.footer {
+    background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+    font-family: Bitter;
+    padding: 20px;
+    text-align: center;
+
+}
+  
+@media screen and (max-width: 700px) {
+    .row, .navbar {   
+      flex-direction: column;
+    }
+}
